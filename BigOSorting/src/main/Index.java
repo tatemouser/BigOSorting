@@ -13,10 +13,18 @@ public class Index {
 		
 			if(methodType.equals("InsertionSort")) {
 				InsertionSort temp = new InsertionSort();
-				temp.PrintIntegers(array); // Before
-				temp.sort(array);
+				temp.printIntegers(array); // Before
+				temp.sortIntegers(array);
 				System.out.println("Sort Complete, After:");
-				temp.PrintIntegers(array); // After
+				temp.printIntegers(array); // After
+			}
+			
+			if(methodType.equals("BubbleSort")) {
+				BubbleSort temp = new BubbleSort();
+				temp.printIntegers(array);
+				temp.sortIntegers(array);
+				System.out.println("Sort Complete, After:");
+				temp.printIntegers(array);
 			}
 		}
 		

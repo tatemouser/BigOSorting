@@ -1,20 +1,20 @@
 package sortMethods;
 
 public class InsertionSort {
-	public void PrintIntegers(Integer[] temp) {
+	public void printIntegers(Integer[] temp) {
 		for(Integer val: temp) {
 			System.out.println(val);
 		}
 	}
 	
 	/**
-	 * 	Consist of sorted array and unsorted array.
+	 * 	Consist of sorted array and unsorted array. Sorted at front.
 	 * 	One element is added to sorted array and placed in correct order.
 	 * 	Continue until sorted array = array size.
 	 * 
 	 * 	O(n^2) occurs when an array is descendingly sorted prior Ex: [9 6 3 3 2 1 1]
 	 */
-	public void sort(Integer[] elements)  {
+	public void sortIntegers(Integer[] elements)  {
 		// Loop used to restart from end of sorted array. Updating i.
 		for(int i = 1; i < elements.length; i++) {
 			
@@ -32,3 +32,10 @@ public class InsertionSort {
 		}
 	}
 }
+
+
+
+
+
+
+
