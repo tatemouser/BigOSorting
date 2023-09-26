@@ -1,0 +1,43 @@
+package main;
+
+import java.util.Scanner;
+import sortMethods.*; 
+
+public class Index {
+	public static void start(int size, String type, String methodType) {
+		System.out.println("Starting Sort, Before:");
+		CreateElements create = new CreateElements();
+		
+		if(type.equals("Integer")) 	{ 
+			Integer[] array = create.IntegerArray(size); 
+		
+			if(methodType.equals("InsertionSort")) {
+				InsertionSort temp = new InsertionSort();
+				temp.PrintIntegers(array); // Before
+				temp.sort(array);
+				System.out.println("Sort Complete, After:");
+				temp.PrintIntegers(array); // After
+			}
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO: Create
+		// TODO: Run
+		// TODO: Print
+		
+		Scanner stdin = new Scanner(System.in);
+		
+		System.out.println("How many elements would you like to sort?");
+		int size = stdin.nextInt();
+		
+		System.out.println("What type of elements would you like to sort?");
+		String type = stdin.next();
+		
+		System.out.println("What sort method would you like to use?");
+		String methodType = stdin.next();
+		
+		start(size, type, methodType);	
+	}
+}
