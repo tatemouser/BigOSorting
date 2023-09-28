@@ -26,6 +26,14 @@ public class Index {
 				System.out.println("Sort Complete, After:");
 				temp.printIntegers(array);
 			}
+			
+			if(methodType.equals("QuickSort")) {
+				QuickSort temp = new QuickSort();
+				temp.printIntegers(array);
+				temp.sortIntegers(array, 0, array.length-1);
+				System.out.println("Sort Complete, After:");
+				temp.printIntegers(array);
+			}
 		}
 		
 	}

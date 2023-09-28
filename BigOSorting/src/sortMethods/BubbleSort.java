@@ -16,8 +16,7 @@ public class BubbleSort {
 	 */
 	public void sortIntegers(Integer[] elements) {
 		// Iterate entire array, incrementing sorted array after i increments
-		for(int i = 0; i < elements.length-1; i++) { 
-			
+		for(int i = 0; i < elements.length-1; i++) { 	
 			for(int j = 1; j < elements.length-i; j++) {
 				// If arr[1] is larger than arr[2]
 				if(elements[j-1].compareTo(elements[j]) > 0) { // 8,9 = 1 or 9,8 = -1
