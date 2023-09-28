@@ -6,32 +6,31 @@ public class QuickSort {
 			System.out.println(val);
 		}
 	}
-	
+
 	public Integer[] swapIntegers(Integer[] elements, int left, int right) {
-		Integer temp = elements[left];
-		elements[left] = right;
-		elements[right] = temp;
-		return elements;
+	    Integer temp = elements[left];
+	    elements[left] = elements[right];
+	    elements[right] = temp;
+	    return elements;
 	}
-	
+
 	public int partition(Integer[] elements, int start, int end) {
-		Integer pivot = elements[start];
-		int left = start+1;
-		int right = end;
-		
-		while(left <= right) {
-			
-			while(left <= right && elements[left].compareTo(pivot) <= 0) { left++; }
-			while(left <= right && elements[right].compareTo(pivot) > 0) { right--; }
-			
-			if(left <= right && elements[right].compareTo(pivot) > 0) {
-				elements = swapIntegers(elements, left, right);
-				left++;
-				right--;
-			}
-		}
-		elements = swapIntegers(elements, start, right);
-		return right;
+	    Integer pivot = elements[start];
+	    int left = start + 1;
+	    int right = end;
+
+	    while (left <= right) {
+	        while (left <= right && elements[left].compareTo(pivot) <= 0) { left++; }
+	        while (left <= right && elements[right].compareTo(pivot) > 0) { right--; }
+
+	        if (left <= right) {
+	            elements = swapIntegers(elements, left, right);
+	            left++;
+	            right--;
+	        }
+	    }
+	    elements = swapIntegers(elements, start, right);
+	    return right;
 	}
 	
 	/**
