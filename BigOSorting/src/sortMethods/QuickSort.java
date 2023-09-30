@@ -13,7 +13,17 @@ public class QuickSort {
 	    elements[right] = temp;
 	    return elements;
 	}
+	
 
+	
+	/*
+	 * Sets pivot element, and sets left and right accordingly.
+	 * Begins loop to move left and right to location where they are less than 
+	 * and greater than the partition. These are then swapped.
+	 * The pivot at the start is then swapped with the right pointer.
+	 * Pivot is then moved out of start and to right pointer.
+	 * Repeat until sorted.
+	 */
 	public int partition(Integer[] elements, int start, int end) {
 	    Integer pivot = elements[start];
 	    int left = start + 1;

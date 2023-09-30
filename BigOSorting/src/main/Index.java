@@ -3,6 +3,7 @@ package main;
 import java.util.Scanner;
 import sortMethods.*; 
 
+// TODO: Add time it takes to perform each search.
 public class Index {
 	public static void start(int size, String type, String methodType) {
 		System.out.println("Starting Sort, Before:");
