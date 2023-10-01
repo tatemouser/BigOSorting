@@ -22,7 +22,6 @@ public class QuickSort {
 	 * and greater than the partition. These are then swapped.
 	 * The pivot at the start is then swapped with the right pointer.
 	 * Pivot is then moved out of start and to right pointer.
-	 * Repeat until sorted.
 	 */
 	public int partition(Integer[] elements, int start, int end) {
 	    Integer pivot = elements[start];
@@ -44,7 +43,7 @@ public class QuickSort {
 	}
 	
 	/**
-	 * 
+	 * Make recursive call of partition steps until start sorted sides meet.
 	 * @param start = 0 on first call
 	 * @param end = temp.length on first call
 	 */

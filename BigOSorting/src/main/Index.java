@@ -39,11 +39,20 @@ public class Index {
 		
 	}
 	
+	public void startTime() {
+		// TODO: 
+	}
+	
+	public void endTime() {
+		// TODO:
+	}
+	
 	public static void main(String[] args) {
+		// startTime()
 		// TODO: Create
 		// TODO: Run
 		// TODO: Print
-		
+		// endTime()
 		Scanner stdin = new Scanner(System.in);
 		
 		System.out.println("How many elements would you like to sort?");
